@@ -123,3 +123,7 @@ public void onRequestPermissionsResult(int requestCode, @NonNull String[] permis
 
 That's all. Happy hacking. :heart_decoration:
 
+p.s.
+
+[IF YOU NEED EXAMPLES](https://github.com/dec04/Android-permission-utils);
+
