@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="get">Get</string>
+    <string name="next">Next</string>
+    <string name="missing_permission_explanation">missing_permission_explanation</string>
+    <string name="get_again">Get again</string>
+    <string name="got_it">Got it</string>
+    <string name="ACCESS_FINE_LOCATION_EXPLANATION">ACCESS_FINE_LOCATION_EXPLANATION</string>
+    <string name="ACCESS_COARSE_LOCATION_EXPLANATION">ACCESS_COARSE_LOCATION_EXPLANATION</string>
+    <string name="WRITE_EXTERNAL_STORAGE_EXPLANATION">WRITE_EXTERNAL_STORAGE_EXPLANATION</string>
+</resources>
