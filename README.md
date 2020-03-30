@@ -3,6 +3,7 @@
 ![](https://img.shields.io/github/license/dec04/PermissionUtilsLibrary)
 ![](https://img.shields.io/github/last-commit/dec04/PermissionUtilsLibrary)
 ![](https://img.shields.io/github/followers/dec04?label=Followers&style=social)
+![](https://img.shields.io/jitpack/v/github/dec04/PermissionUtilsLibrary)
 
 ## Simple class for give multiple permissions on android device, with simple explorations. 
 
