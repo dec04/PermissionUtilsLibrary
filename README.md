@@ -29,7 +29,7 @@ allprojects {
 
 ```gradle
 dependencies {
-    implementation 'com.github.dec04:PermissionUtilsLibrary:1.0'
+    implementation 'com.github.dec04:PermissionUtilsLibrary:1.0.1'
 }
 ```
 
