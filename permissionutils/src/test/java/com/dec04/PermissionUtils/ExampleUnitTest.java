@@ -1,4 +1,4 @@
-package com.dec04.permissionutils;
+package com.dec04.PermissionUtils;
 
 import org.junit.Test;
 

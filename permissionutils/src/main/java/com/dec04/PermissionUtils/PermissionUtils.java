@@ -1,4 +1,4 @@
-package com.dec04.permissionutils;
+package com.dec04.PermissionUtils;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -9,28 +9,30 @@ import android.content.pm.PackageManager;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-class PermissionUtils {
+/**
+ * Class to check and request multiple android permissions at once
+ */
+public class PermissionUtils {
 
     private Context context;
-    private String TAG = "DEV";
 
-    // Код ответа для запроса разрешений
+    // Response code
     private int PERMISSION_REQUEST_CODE = 1;
 
-    // Флаг сообщает о том, что после запроса разрешений - запрос отклонили\
-    boolean flagPermissionDenied = false;
+    // Request for permission after request - request rejected
+    public boolean flagPermissionDenied = false;
 
-    // Обьяснение, зачем нужны разрешения
-//    private String explanation;
-
-    // Конструкторы
-    PermissionUtils(Context context) {
+    public PermissionUtils(Context context) {
         this.context = context;
-//        this.explanation = explanation;
     }
 
-    // Проверяем, есть ли у пользователя необзодимые разрешения
-    boolean check(final String[] permissions) {
+    /**
+     * Check which permissions is granted.
+     *
+     * @param permissions massive of permissions need to be checked
+     * @return true or false
+     */
+    public boolean check(final String[] permissions) {
         int statement = 0;
 
         for (String permission : permissions) {
@@ -41,10 +43,12 @@ class PermissionUtils {
         return statement == PackageManager.PERMISSION_GRANTED;
     }
 
-    // Запрашиваем разрешение и если необходимо - показываем обьяснение
-    void requestPermission(final String[] permissions) {
-//        this.explanation = context.getResources().getString(R.string.request_permission_explanation);
-
+    /**
+     * Request permissions.
+     *
+     * @param permissions massive of permissions need to be request
+     */
+    public void requestPermission(final String[] permissions) {
         // Permission is missing.
         // Permission is not granted
         // Should we show an explanation?
@@ -90,9 +94,11 @@ class PermissionUtils {
     }
 
     /**
-     * Показываем диалог, обьясняющий что разрешения не получены.
+     * Show missing permission dialog with explanations, why app need these permissions.
+     *
+     * @param permissions massive of permissions need to be request
      */
-    void showMissingPermissionError(final String[] permissions) {
+    public void showMissingPermissionError(final String[] permissions) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setMessage(R.string.missing_permission_explanation)
                 .setNeutralButton(R.string.get_again, new DialogInterface.OnClickListener() {
